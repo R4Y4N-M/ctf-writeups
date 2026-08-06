@@ -96,3 +96,7 @@ A vulnerable binary allowed privilege escalation to root.
 - Reverse Shells
 - Linux Enumeration
 - SUID Privilege Escalation
+
+## Personal Reflection
+
+RootMe helped me better understand file upload vulnerabilities and how weak validation mechanisms can be bypassed. I also gained valuable practice enumerating Linux systems and identifying SUID binaries that can be abused for privilege escalation.
