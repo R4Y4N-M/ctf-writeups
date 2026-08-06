@@ -99,3 +99,7 @@ find / -perm -4000 2>/dev/null
 - WPScan
 - Reverse Shells
 - Linux Privilege Escalation
+
+## Personal Reflection
+
+Internal gave me hands-on experience attacking a WordPress environment and reinforced the value of combining multiple enumeration techniques. It improved my understanding of how web application weaknesses and Linux privilege escalation techniques can be chained together to fully compromise a system.
