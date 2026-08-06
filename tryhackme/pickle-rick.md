@@ -122,3 +122,7 @@ Root access was obtained using the allowed sudo command.
 - Linux Enumeration
 - Reverse Shells
 - Privilege Escalation
+
+## Personal Reflection
+
+This room reinforced the importance of thorough enumeration. It also gave me more practice working with Linux privilege escalation techniques.
