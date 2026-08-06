@@ -87,3 +87,7 @@ find / -perm -4000 2>/dev/null
 - Linux Enumeration
 - SSH
 - Privilege Escalation
+
+## Personal Reflection
+
+Year of the Rabbit emphasized the importance of paying attention to small clues during enumeration. It reminded me that successful penetration testing is often a process of connecting multiple pieces of information together rather than finding one obvious vulnerability.
