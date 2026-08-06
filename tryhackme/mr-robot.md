@@ -83,3 +83,7 @@ Escalated privileges through Linux misconfigurations.
 - Burp Suite
 - Reverse Shells
 - Linux Enumeration
+
+## Personal Reflection
+
+Mr. Robot challenged me to think more methodically throughout the engagement. The room demonstrated that successful exploitation often depends on careful reconnaissance and persistence rather than relying on a single vulnerability.
