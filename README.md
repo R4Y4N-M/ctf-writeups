@@ -37,4 +37,8 @@ This repository documents my progress through CTF platforms, penetration testing
 - Internal
 - Year of the Rabbit
 
+### Completed HackTheBox Rooms
+Cap
+FireFlow
+
 More writeups and scripts will be added as I continue learning.
