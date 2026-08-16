@@ -36,6 +36,7 @@ This repository documents my progress through CTF platforms, penetration testing
 - Mr. Robot
 - Internal
 - Year of the Rabbit
+- Wonderland
 
 ### Completed HackTheBox Rooms
 - Cap
