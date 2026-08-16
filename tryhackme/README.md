@@ -10,5 +10,6 @@ This directory contains my writeups for completed TryHackMe rooms.
 - Mr. Robot
 - Internal
 - Year of the Rabbit
+- Wonderland
 
 These writeups document my methodology, commands used, and lessons learned while solving each room.
