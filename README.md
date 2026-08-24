@@ -43,6 +43,7 @@ This repository documents my progress through CTF platforms, penetration testing
 ### Completed HackTheBox Rooms
 - Cap
 - FireFlow
+- Nexus
 
 
 More writeups and scripts will be added as I continue learning.
