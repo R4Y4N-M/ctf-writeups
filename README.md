@@ -38,6 +38,7 @@ This repository documents my progress through CTF platforms, penetration testing
 - Year of the Rabbit
 - Wonderland
 - Road
+- Ultratech
 
 ### Completed HackTheBox Rooms
 - Cap
