@@ -39,6 +39,7 @@ This repository documents my progress through CTF platforms, penetration testing
 - Wonderland
 - Road
 - Ultratech
+- Wekor
 
 ### Completed HackTheBox Rooms
 - Cap
