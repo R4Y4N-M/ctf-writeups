@@ -11,5 +11,7 @@ This directory contains my writeups for completed TryHackMe rooms.
 - Internal
 - Year of the Rabbit
 - Wonderland
+- Wekor
+- Year of the Fox
 
 These writeups document my methodology, commands used, and lessons learned while solving each room.
