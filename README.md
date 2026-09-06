@@ -40,7 +40,7 @@ This repository documents my progress through CTF platforms, penetration testing
 - Road
 - Ultratech
 - Wekor
-- Year of the Rabbit
+- Year of the Fox
 
 ### Completed HackTheBox Rooms
 - Cap
