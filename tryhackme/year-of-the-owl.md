@@ -1,8 +1,8 @@
 # TryHackMe – Year of the Owl
 
-# Difficulty: Medium
-# Platform: TryHackMe
-# Category: Web Exploitation / Linux Privilege Escalation
+ Difficulty: Medium
+ Platform: TryHackMe
+ Category: Web Exploitation / Linux Privilege Escalation
 
 # Objective
 
