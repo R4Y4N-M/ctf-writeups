@@ -129,7 +129,7 @@ This involved abusing a system misconfiguration to gain elevated privileges.
 Once successful:
 
 ```powershell
-.\winPEASx64.exe
+.\winPEAS.bat
 ```
 
 ---
