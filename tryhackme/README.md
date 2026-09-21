@@ -13,5 +13,7 @@ This directory contains my writeups for completed TryHackMe rooms.
 - Wonderland
 - Wekor
 - Year of the Fox
+- Anonymous Playground
+- year of the Owl
 
 These writeups document my methodology, commands used, and lessons learned while solving each room.
