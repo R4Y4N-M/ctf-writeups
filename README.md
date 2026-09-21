@@ -42,6 +42,7 @@ This repository documents my progress through CTF platforms, penetration testing
 - Wekor
 - Year of the Fox
 - Anonymous Playground
+- Year of the Owl
 
 ### Completed HackTheBox Rooms
 - Cap
