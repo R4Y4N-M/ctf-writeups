@@ -35,7 +35,11 @@ The first step was identifying open ports and running services.
 
 Example:
 
+```bash
 nmap -sC -sV -oN nmap.txt <TARGET_IP>
+```
+
+---
 
 Information gathered included:
 
@@ -46,15 +50,15 @@ Information gathered included:
 
 This established the attack surface.
 
-# 2. Web Enumeration
-
-The website contained limited information, so directory brute forcing was performed.
+# 2. SNMB Enumeration
+SMB shares were enumerated using smbclient, allowing the discovery of accessible resources and information that contributed to obtaining valid credentials.
 
 Example:
 
-gobuster dir \
--u http://TARGET_IP \
--w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+```bash
+smbclient -L //<TARGET_IP> -U <USERNAME>
+```
+---
 
 Interesting directories and files were discovered.
 
@@ -78,6 +82,15 @@ After identifying the exposed services during enumeration, I investigated the av
 The SMB enumeration revealed files and data that assisted in identifying valid credentials and understanding the target environment. 
 Once valid credentials were obtained, I authenticated to the Windows host using Evil-WinRM, which provided a PowerShell session for further post-exploitation activities.
 
+Example:
+
+```powershell
+evil-winrm -i <TARGET_IP> -u <USERNAME> -p '<PASSWORD>'
+```
+
+---
+
+
 Once inside, user enumeration was performed.
 
 Example:
@@ -92,6 +105,20 @@ pwd
 After gaining remote access through Evil-WinRM, I performed standard Windows enumeration to identify privilege escalation opportunities.
 This included reviewing user privileges, installed software, scheduled tasks, services, and configuration files to better understand the security posture of the host.
 
+Example:
+
+
+```powershell
+whoami
+hostname
+systeminfo
+ipconfig
+whoami /priv
+whoami /groups
+```
+
+---
+
 
 # 6. Privilege Escalation
 
@@ -101,25 +128,20 @@ This involved abusing a system misconfiguration to gain elevated privileges.
 
 Once successful:
 
-id
+```powershell
+.\winPEASx64.exe
+```
 
-returned
-
-uid=0(root)
-
-confirming root access.
-
+---
 # 7. Capture Flags
 
 Finally:
 
-cat user.txt
+```powershell
+type C:\Users\Jareth\Desktop\user.txt
 
-and
-
-cat root.txt
-
-were used to retrieve both flags.
+type C:\Users\Administrator\Desktop\root.txt
+```
 
 # Lessons Learned
 
@@ -131,24 +153,6 @@ This room reinforced several important penetration testing concepts:
 - Privilege escalation depends on identifying small misconfigurations.
 - Enumeration is usually more important than exploitation.
 
-
-# Commands Used
-nmap -sC -sV TARGET_IP
-
-gobuster dir -u http://TARGET_IP \
--w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
-
-ssh user@TARGET_IP
-
-sudo -l
-
-find / -perm -4000 2>/dev/null
-
-id
-
-whoami
-
-hostname
 
 
 # MITRE ATT&CK Mapping
